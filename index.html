@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="form2fit, kit assembly, robotics, robotic learning, reinforcement learning, computer vision, neural networks, machine learning">
+        <title>Form2Fit</title>
+
+        <!--Open Graph-->
+        <meta property="og:title" content="Form2Fit"/>
+        <meta property="og:url" content="http://form2fit.github.io/"/>
+        <meta property="og:description" content="Learning generalizable policies for robotic kit assembly."/>
+        <meta property="og:site_name" content="Form2Fit"/>
+        <meta property="og:image" content="https://form2fit.github.io/assets/images/method.png"/>
+        <meta property="og:image:url" content="https://form2fit.github.io/images/method.png"/>
+
+        <!--Twitter Card-->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Form2Fit"/>
+        <meta name="twitter:image" content="https://form2fit.github.io/images/method.png"/>
+        <meta name="twitter:url" content="http://form2fit.github.io/"/>
+        <meta name="twitter:description" content="Learning generalizable policies for robotic kit assembly."/>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146254085-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-146254085-1');
+        </script>
+    </head>
+
+    <body id="top">
+        <div id="main" style="padding-bottom:1em; padding-top: 2em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
+            <section id="four">
+                <!-- Logos -->
+                <div class="logorow">
+                    <div class="logocol"><img src="images/googlelogo.svg" style="width: 35%; padding-top: 10px;"></div>
+                    <div class="logocol"><img src="images/stanfordlogo.jpg" style="width: 40%; padding-top: 7px;"></div>
+                    <div class="logocol"><img src="images/columbia-logo.png" style="width: 70%;"></div>
+                </div>
+
+                <!-- Title -->
+                <h1 style="text-align: center; margin-bottom: 0;"><font color="4e79a7">Form2Fit: </font>Learning Shape Priors for Generalizable Assembly</h1>
+                <h2 style="text-align: center;">from Self-Supervised Disassembly</h2>
+                <div style="clear:both;"></div>
+
+
+                <!-- Buttons -->
+                <div style="text-align:center;">
+                    <!-- <a href="https://" class="button">Blog</a> -->
+                    <a href="paper.pdf" class="button">Paper</a>
+                    <a href="https://arxiv.org/abs/1903.11239/" class="button">Video</a>
+                    <a href="https://github.com/kevinzakka/form2fit" class="button">Code</a>
+                </div>
+                <br>
+
+                <p>
+                Is it possible to learn policies for <font color="4e79a7">robotic assembly</font> that can generalize to new objects?
+                In this work, we propose to formulate the kit assembly task as a shape matching problem, where the goal
+                is to learn a <font color="4e79a7">shape descriptor</font> that establishes geometric correspondences between object surfaces and their
+                target placement locations from visual input. This formulation enables the model to acquire a broader understanding
+                of how shapes and surfaces fit together for assembly -- allowing it to generalize to new objects and kits.
+                To obtain training data for our model, we present a <font color="4e79a7">self-supervised</font> data-collection pipeline that
+                obtains ground truth object-to-placement correspondences by disassembling complete kits. Our resulting real-world system,
+                <font color="4e79a7">Form2Fit</font>, learns effective pick and place strategies for assembling objects into a variety of kits --
+                achieving 90% average success rates under different initial conditions (<i>e.g.</i> varying object and kit poses),
+                94% success under new configurations of multiple kits, and over 86% success with completely new objects
+                and kits.
+                </p>
+
+                <div style="text-align: center;"><img src="./images/method.svg" style="width: 100%;"></div>
+
+                <!-- Paper Details -->
+                <hr/ style="margin-bottom: 0.5em">
+                <h3>Paper</h3>
+
+                <!-- To appear at <font color="4e79a7">XXXX 2020</font>.<br> -->
+                Currently under review.<br>
+                [<a href="paper.pdf">Paper</a>] [<a href="supplemental.pdf">Supplemental</a>]<br><br>
+                <div class="12u$"><a href="paper.pdf"><span class="image fit" style="border: 1px solid; border-color: #888888;"><img src="images/paper-thumbnail.svg"/></span></a></div>
+
+                <hr/ style="margin-bottom: 0.5em">
+                <h3>Team</h3>
+                <section>
+                    <div class="box alt" style="margin-bottom: 1em;">
+                        <div class="row 50% uniform" style="width: 100%;">
+                            <div class="2u" style="font-size: 1.em; line-height: 1.5em; text-align: center;"><a href="https://kzakka.com/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="images/kevin-thumbnail.jpg" alt="" style="border-radius: 50%;" /></span>Kevin Zakka <sup>1,2</sup></a></div>
+                            <div class="2u" style="font-size: 1.em; line-height: 1.5em; text-align: center;"><a href="https://andyzeng.github.io/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="images/andy-thumbnail.jpg" alt="" style="border-radius: 50%;" /></span>Andy Zeng <sup>2, 3</sup></a></div>
+                            <div class="2u" style="font-size: 1.em; line-height: 1.5em; text-align: center;"><a href="https://johnnylee.net/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="images/johnny-thumbnail.png" alt="" style="border-radius: 50%;" /></span>Johnny Lee <sup>2</sup></a></div>
+                            <div class="2u" style="font-size: 1.em; line-height: 1.5em; text-align: center;"><a href="https://shurans.github.io/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="images/shuran-thumbnail.jpg" alt="" style="border-radius: 50%;" /></span>Shuran Song <sup>2,3</sup></a></div>
+                        </div>
+                    </div>
+                </section>
+                <sup>1</sup> Stanford University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup> Google&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>3</sup> Columbia University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <hr>
+                <div class="row" style="margin-top: 0em">
+                    <div class="6u 12u$(xsmall)">
+                        <h3>Code and Extras</h3>
+                        You can find additional resources on <a href="https://github.com/kevinzakka/form2fit">Github</a>. Includes:
+                        <br><br>
+                        <ul>
+                            <li>Network architectures (PyTorch).</li>
+                            <li>Pre-trained models.</li>
+                            <li>GUI for visualizing trained matching networks.</li>
+                            <li>Benchmark and evaluation code.</li>
+                        </ul>
+                    </div>
+                    <div class="6u$ 12u$(xsmall)">
+                        <h3>Bibtex</h3>
+                        <pre><code>@article{zakka2019form2fit,
+  title={Form2Fit: Learning Shape Priors for Generalizable Assembly from Disassembly},
+  author={Zakka, Kevin and Zeng, Andy and Lee, Johnny and Song, Shuran},
+  year={2019}
+}</code></pre>
+                    </div>
+                </div>
+
+                <hr/ style="margin-bottom: 0.5em">
+                <div class="row">
+                    <div class="12u$ 12u$(xsmall)" style="text-align: center;">
+                        <h3>Technical Summary Video (with audio)</h3>
+                        Coming soon...
+                        <!-- <iframe id="match-video" width="640" height="360" style="margin-bottom: 2em; margin-left: auto; margin-right: auto; display:block;" src="https://www.youtube.com/embed/f5Zn2Up2RjQ?rel=0" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                </div>
+
+                <hr/ style="margin-bottom: 0.5em">
+                <h3>Example Results: Varying Initial Conditions</h3>
+                <p>Trained only on single kit poses (<i>i.e.</i> position and orientation), <font color="4e79a7">Form2Fit</font> can successfully assemble kits with random object and kit poses.</p>
+                <div class="box alt">
+                    <div class="row 50% uniform">
+                        <div class="6u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/res-floss.mp4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Single-Object Kit</h5></div>
+                        <div class="6u$"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/res-tape.mp4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Single-Object Kit</h5></div>
+                        <div class="6u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/res-deo.mp4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Order Matters</h5></div>
+                        <div class="6u$"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/res-zoo.mp4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Order Doesn't Matter</h5></div>
+                    </div>
+                </div>
+                <hr/ style="margin-bottom: 0.5em">
+                <h3>Example Results: Generalizing to Novel Configurations</h3>
+                <p>A model trained on individual kits can learn to assemble <font color="4e79a7">combinations</font> and <font color="4e79a7">mixtures</font> of these kits.</p>
+                <div class="box alt">
+                    <div class="row 50% uniform">
+                        <div class="6u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/combo-1.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+                        <div class="6u$"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/combo-2.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+                        <div class="6u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/mixture-1.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+                        <div class="6u$"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/mixture-2.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+                    </div>
+                </div>
+                <hr/ style="margin-bottom: 0.5em">
+                <h3>Example Results: Generalizing to Novel Objects & Kits</h3>
+                <p><font color="4e79a7">Form2Fit</font> can also assemble previously unseen objects and kits.</p>
+                <div class="box alt">
+                    <div class="row 50% uniform">
+                        <div class="6u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/gen-circle.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+                        <div class="6u$"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/gen-green-gray.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+                        <div class="6u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/gen-green.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+                        <div class="6u$"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/gen-tape.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+                    </div>
+                </div>
+                <video style="display:block; margin: 0 auto; width: 50%;" controls><source src="./images/videos/gen-animals.mp4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Never-Before-Seen Zoo Animals</h5>
+
+                <!-- <hr/ style="margin-bottom: 0.5em">
+                <h3>Failure Modes: 180-degree Rotational Flips</h3> -->
+
+                <hr/ style="margin-bottom: 0.5em">
+                <h3>Acknowledgements</h3>
+                <p>We would like to give special thanks to Nick Hynes, Alex Nichol, and Ivan Krasin for fruitful technical discussions,
+                    Adrian Wong, Brandon Hurd, Julian Salazar, and Sean Snyder for hardware support, and Ryan Hickman
+                    for valuable managerial support. We are also grateful for hardware and financial support from Google.
+                </p>
+
+                <hr/ style="margin-bottom: 0.5em">
+                <h3>Contact</h3>
+                <p>If you have any questions, please feel free to contact <a href="https//kzakka.com/">Kevin Zakka</a> at zakka_at_stanford_dot_edu.</p>
+
+                <!-- Footnotes -->
+                <!-- <hr/ style="margin-bottom: 0.5em">
+                    <ol>
+                        <li id="ft1">Assembly refers to the process of placing object(s) into a blister pack or corrugated display to form a single unit. <a href="#ft1-ref" aria-label="Back to content">↩</a></li>
+                        <li id="ft2">Such as empty holes, cavities, or even other objects when stacking. <a href="#ft2-ref" aria-label="Back to content">↩</a></li>
+                    </ol> -->
+
+                <!-- Date -->
+                <hr/ style="margin-bottom: 0.5em"><div class="6u 12u$(xsmall)">Last Edit: Sept 15, 2019.</div>
+
+            </section>
+        </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.poptrox.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>
