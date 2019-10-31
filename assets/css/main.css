@@ -2419,9 +2419,9 @@ article {
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			background-color: rgba(22, 131, 182, 0.1);
+			border-color: #4e79a7;
+			color: #4e79a7 !important;
 		}
 
 		input[type="submit"].icon,
@@ -2466,8 +2466,8 @@ article {
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #4e79a7;
+			border-color: #4e79a7;
 			color: #ffffff !important;
 		}
 
@@ -2475,16 +2475,16 @@ article {
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #4e79a7;
+				border-color: #4e79a7;
 			}
 
 			input[type="submit"].special:active,
 			input[type="reset"].special:active,
 			input[type="button"].special:active,
 			.button.special:active {
-				background-color: #3eb08f;
-				border-color: #3eb08f;
+				background-color: #4e79a7;
+				border-color: #4e79a7;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
